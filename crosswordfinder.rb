@@ -24,7 +24,7 @@ class Finder
   end
 
   def languages
-    @languages.keys
+    @languages.keys.sort
   end
 
   def find(language, pattern)
