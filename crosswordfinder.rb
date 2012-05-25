@@ -5,8 +5,8 @@ class Finder
   include Singleton
 
   def initialize
-    lists_dir = File.dirname(__FILE__)
-    language_files = Dir.glob(File.join(lists_dir, '*.list'))
+    lists_dir = File.join(File.dirname(__FILE__), 'lists')
+    language_files = Dir.glob(File.join(lists_dir, '*'))
     @languages = {}
     language_files.each do |language_file|
       puts "Loading #{language_file}..."
