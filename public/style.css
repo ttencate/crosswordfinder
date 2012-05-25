@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+body {
+  font-family: "Droid Serif", serif;
+  font-size: 16px;
+  background-color: #eeeeef;
+  padding: 0;
+  margin: 32px auto;
+  max-width: 512px;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #444455;
+  text-shadow: 0 0 6px #888;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.results {
+  border-top: 1px solid #ccd;
+  margin: 8px 0;
+  padding: 8px 0 0;
+  text-align: right
+}
+
+fieldset {
+  margin: 8px 0;
+  padding: 0;
+  border: none;
+}
+
+input[type="text"] {
+  float: left;
+  font-family: monospace;
+  font-size: 24px;
+  margin: 0 8px 0 0;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  width: 286px;
+  height: 32px;
+}
+
+select {
+  float: left;
+  margin: 8px 8px 8px 0;
+  padding: 4px;
+  font-size: 14px;
+  width: 128px;
+  height: 32px;
+}
+
+button {
+  float: left;
+  margin: 8px 0;
+  padding: 4px;
+  font-size: 14px;
+  width: 64px;
+  height: 32px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 8px 8px;
+  list-style: none;
+  max-height: 384px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+li {
+  font-family: monospace;
+  font-size: 24px;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.footer {
+  font-size: 70%;
+  color: #889;
+  text-align: center;
+  border-top: 1px solid #ccd;
+  margin: 32px 0 0;
+  padding: 32px 0 0;
+}
