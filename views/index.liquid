@@ -9,7 +9,7 @@
   <body>
     <h1>Crossword Finder</h1>
     <form>
-      <p>Enter the letters you know, using a period (<tt>.</tt>) to indicate unknown letters (blanks). For example: &ldquo;<tt>a..w.r</tt>&rdquo;.</p>
+      <p>Enter the letters you know, using a period (<tt>.</tt>) to indicate unknown letters (blanks). For example: <tt>a..w.r</tt>.</p>
       <fieldset>
         <input id="q" type="text" name="q" value="{{ q }}" autofocus></input>
         <select name="l">
@@ -23,7 +23,15 @@
       </fieldset>
       {% if results %}
         <p class="results">
-          Found <strong>{{ results | size }}</strong> results
+          {% case results.length %}
+            {% when 0 %}
+              Found <strong>no</strong> results
+            {% when 1 %}
+              Found <strong>1</strong> result
+            {% else %}
+              Found <strong>{{ results | size }}</strong> results
+          {% endcase %}
+          for <tt>{{ q }}</tt> ({{ q | size }} letters)
         </p>
         <ul>
           {% for result in results %}
